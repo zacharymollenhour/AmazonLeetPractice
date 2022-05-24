@@ -19,10 +19,16 @@ namespace TwoSum
     {
         public static void Main(string[] args)
         {
+            int[] numsList = new int[] { 2, 7, 11, 15 };
+            int target = 9;
 
+            // Execute the function 
+            var response = GetTwoSum(numsList, target);
+            Console.WriteLine($"[{response[0]},{response[1]}] ");
+            Console.Read();
         }
 
-        public int[] GetTwoSum(int[] nums, int target)
+        public static int[] GetTwoSum(int[] nums, int target)
         {
             if (nums == null || nums.Length == 0)
             {
@@ -33,6 +39,28 @@ namespace TwoSum
                 return nums;
             }
 
+            Dictionary<int, int> pairs = new Dictionary<int, int>();   
+            
+            // Loop through all nums and add the num and its index to the dictionary
+            for (int i = 0; i < nums.Length; i++)
+            {
+                pairs.Add(nums[i], i);
+            }
+
+            // Loop through all of the pairs and get the complement (difference between the number and the target
+            for (int i = 0; i < nums.Length; i++)
+            {
+                var complement = target - nums[i];
+                int a;
+                if (pairs.TryGetValue(complement, out a))
+                {
+
+                    return new int[] { i, a };
+                }
+            }
+
+            // Otherwise, return null when no solution exists
+            return null;
 
         }
     }
