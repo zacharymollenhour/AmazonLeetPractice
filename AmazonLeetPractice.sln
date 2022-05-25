@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZigZag Conversion", "ZigZag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseInteger", "ReverseInteger\ReverseInteger.csproj", "{0A3D51C7-1A59-4A02-B3F1-FE894FAB8143}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlipStringToMonotoneIncreasing", "FlipStringToMonotoneIncreasing\FlipStringToMonotoneIncreasing.csproj", "{4A3E9130-C50A-42AA-85F3-FF72A694CAC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{0A3D51C7-1A59-4A02-B3F1-FE894FAB8143}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A3D51C7-1A59-4A02-B3F1-FE894FAB8143}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A3D51C7-1A59-4A02-B3F1-FE894FAB8143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A3E9130-C50A-42AA-85F3-FF72A694CAC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A3E9130-C50A-42AA-85F3-FF72A694CAC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A3E9130-C50A-42AA-85F3-FF72A694CAC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A3E9130-C50A-42AA-85F3-FF72A694CAC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
